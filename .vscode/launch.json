@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            "trace": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*"
+            }
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "file": "${workspaceRoot}/dist/index.html",
+            "sourceMaps": true,
+            "trace": true,
+            "sourceMapPathOverrides": {
+
+                "webpack:///./*": "${workspaceRoot}/*",
+
+
+            }
+            
+        },
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/dist/bundle.js",
+            "sourceMaps": true,
+            "outFiles": [
+                "public/js/*"
+            ]
+
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 8080,
+            "address": "localhost",
+            "sourceMaps": true,
+            "outFiles": [
+                "public/src/*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "build": "webpack"
+    },
+    "dependencies": {
+        "ts-loader": "^3.2.0",
+        "typescript": "^2.6.2"
+    }
+}

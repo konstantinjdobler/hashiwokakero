@@ -1,0 +1,60 @@
+canvas#playboard {   
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+    
+}
+div#playboard-container{
+  width: 50%;
+  height: 50% ;
+  margin: 12px auto;
+  border: 2px solid;
+  position: relative;
+  top: 30%
+}
+
+.controlButton {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.messagebox{
+  padding: 1%; 
+  width: 60%; 
+  height: 70px; 
+  border: 2px solid; 
+  margin: auto auto; 
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buttonbox{
+  margin:0px auto;
+  padding: 20px 2%;
+  border: 2px solid;
+  width: 60%;
+  text-align: center;
+  align-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
